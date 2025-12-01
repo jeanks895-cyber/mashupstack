@@ -1,65 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jean</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Profile — GPT-5 Thinking mini</title>
+  <style>
+    /* Internal CSS (as required) */
+    :root{
+      --accent-1: #0b7285; /* teal */
+      --accent-2: #f08a5d; /* warm orange */
+      --accent-3: #6a4c93; /* purple */
+      --card-bg: rgba(255,255,255,0.85);
+    }
+
+    /* full-page background (gradient) */
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(135deg, #e6f7ff 0%, #f7e6ff 50%, #fff8e6 100%);
+      -webkit-font-smoothing:antialiased;
+      color:#222;
+    }
+
+    .container{
+      max-width:800px;
+      margin:6vh auto;
+      padding:2rem;
+      background:var(--card-bg);
+      border-radius:16px;
+      box-shadow: 0 8px 30px rgba(18,18,18,0.08);
+      backdrop-filter: blur(6px);
+    }
+
+    header{
+      text-align:center;
+      padding:0.5rem 1rem 1.5rem 1rem;
+    }
+
+    h1{
+      margin:0;
+      font-size:2.4rem; /* large heading */
+      letter-spacing: -0.02em;
+      color:var(--accent-1); /* teal heading */
+    }
+
+    .subtitle{
+      margin-top:0.35rem;
+      color:var(--accent-3); /* purple */
+      font-weight:600;
+    }
+
+    .bio{
+      margin-top:1.25rem;
+      padding:1rem;
+      background: linear-gradient(90deg, rgba(240,138,93,0.08), rgba(106,76,147,0.04));
+      border-left:5px solid var(--accent-2); /* warm orange accent */
+      border-radius:8px;
+      color:#1a1a1a;
+      line-height:1.6;
+    }
+
+    .quote{
+      margin-top:1.25rem;
+      padding:0.9rem 1rem;
+      font-style:italic; /* italic quote */
+      color:var(--accent-3);
+      background:transparent;
+      text-align:center;
+      border-radius:8px;
+    }
+
+    footer{
+      margin-top:1.5rem;
+      text-align:center;
+      color:#555;
+      font-size:0.95rem;
+    }
+
+    /* small responsive tweaks */
+    @media (max-width:520px){
+      .container{margin:4vh 1rem;padding:1rem}
+      h1{font-size:1.8rem}
+    }
+  </style>
 </head>
 <body>
-    <a href="#about">about page</a>
-    <h1>MASHUP STACK</h1>
-    <h2>jean</h2>
-    <h3>login</h3>
+  <main class="container" role="main">
+    <header>
+      <h1>GPT-5 Thinking mini</h1>
+      <div class="subtitle">A friendly AI assistant</div>
+    </header>
 
-    <div style="color: brown;">
-        <p>demo</p>
-    <p>his is long paragraph. <span style="color: cyan;" Lorem ipsum dolor</span>  sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore </p> <p>  et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation  ullamco </p> <p> nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugi  </p> </div>
-    <a href="mashup.html">click here</a>
-    <a href="https://www.facebook.com/login.html">click here</a>
-    <img src="https://www.autoshippers.co.uk/blog/wp-content/uploads/bugatti-centodieci-1024x576.jpg" alt="bugatti-centodieci-1024x576"width=500px height="">
-    <img src="videoframe_0.webp" alt="">
+    <section class="bio" aria-label="Short bio">
+      <p>
+        I'm an AI assistant designed to help with writing, coding, and research. I enjoy turning ideas into clear, useful outputs — whether that's a tidy HTML page, a helpful explanation, or a clever prompt. I aim to be concise, curious, and cooperative.
+      </p>
+    </section>
 
-    <ol type="i">
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-    </ol>
+    <section class="quote" aria-label="Favorite quote">
+      <p>"The important thing is not to stop questioning. Curiosity has its own reason for existing."</p>
+      <small>— <em>Albert Einstein</em></small>
+    </section>
 
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperTExt Markup Language</dd>
-        <dt>XHtml</dt>
-        <dd>Extensible Hypertext Markup Language</dd>
-    </dl>
-    <strong> et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud <em>html</em> <del>javascript</del> <ins>CSS</ins> exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in repre</strong> 8<sup>th</sup>
-
-    <b>Hello World</b>
-    <b>Hello World</b>
-
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Jean</td>
-            <td>21</td>
-            <tr>
-                <td>Prathi</td>
-                <td>21</td>
-            </tr>
-        </tr>
-    </table>
-    <hr>
-    <div id="about">
-        <h1>hello everyone</h1>
-        <p>this is my first html class</p>
-    </div>
+    <footer>
+      <p>Colors used: teal, warm orange, purple. Background: soft pastel gradient.</p>
+    </footer>
+  </main>
 </body>
 </html>
