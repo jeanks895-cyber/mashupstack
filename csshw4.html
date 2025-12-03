@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Company Contact Card</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #f3f6fb;
+    color: #222;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0b5cff;
+    color: #fff;
+    padding: 14px 16px;
+    text-align: center;
+    font-weight: 600;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(8,18,50,0.08);
+  }
+
+  .page {
+    padding: 90px 16px 40px; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-container {
+    width: 900px;
+    max-width: 100%;
+    background: #ffffff;
+    border: 1px solid #e6e9ef;
+    border-radius: 8px;
+    position: relative;      
+    padding: 20px;
+    overflow: auto;            
+    max-height: 420px;         
+    box-shadow: 0 6px 18px rgba(11,20,50,0.06);
+  }
+
+  .profile-main {
+    padding-right: 260px; 
+    position: relative;
+  }
+  .profile-main::after { content: ""; display: block; clear: both; }
+
+  .profile-image {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 18px;
+    margin-bottom: 12px; 
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(10,20,50,0.04);
+  }
+
+  
+  .details {
+    margin-left: 0; 
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;      
+    padding: 8px 12px;
+  }
+  .details h2 { margin: 0 0 6px; font-size: 22px; }
+  .details h4 { margin: 0 0 10px; font-size: 15px; color: #4b5b7a; font-weight: 600; }
+  .details p { margin: 0; line-height: 1.45; color: #334155; }
+
+  
+  .separator {
+    position: absolute;
+    top: 20px;
+    right: calc(200px + 40px); 
+    width: 0;
+    height: calc(100% - 40px);  
+    border-left: 2px solid #e6e9ef;
+    border-right: 0;
+    pointer-events: none;
+  }
+
+  
+  .contact-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    min-height: 120px;
+    padding: 14px;
+    background: linear-gradient(180deg,#f7fbff,#eef7ff);
+    border: 1px solid #cfe1ff;
+    border-radius: 8px;
+    text-align: center;            
+    display: flex;
+    flex-direction: column;
+    justify-content: center;          
+    overflow: auto;                   
+  }
+  .contact-box h3 { margin: 0 0 8px; font-size: 16px; }
+  .contact-box p { margin: 4px 0; word-wrap: break-word; color: #16325c; font-weight: 600; }
+
+  @media (max-width: 640px) {
+    .profile-container { padding: 16px; max-height: none; }
+    .profile-main { padding-right: 0; }
+    .separator { display: none; }
+    .contact-box {
+      position: static;
+      margin-top: 14px;
+      width: 100%;
+      min-height: auto;
+    }
+    .profile-image { float: none; display: block; margin: 0 auto 12px; }
+    .details { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>Company Contact Card</header>
+
+<div class="page">
+  <article class="profile-container" aria-labelledby="profile-title">
+
+    <section class="profile-main">
+      <img class="profile-image"
+           src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid&w=740&q=80"
+           alt="Employee photo of Jane Doe">
+
+      <div class="details" role="region" aria-label="Employee details">
+        <h2 id="profile-title">Jane Doe</h2>
+        <h4>Lead Product Designer</h4>
+        <p>
+          Jane leads product design with a focus on user-centred interfaces and accessibility.
+          She has 8+ years designing web and mobile products and enjoys mentoring junior designers.
+        </p>
+      </div>
+
+      <div class="separator" aria-hidden="true"></div>
+    </section>
+
+<aside class="contact-box" role="complementary" aria-label="Contact information">
+    <h3>Contact Info</h3>
+    
+    <p><strong>Phone:</strong><br>📞 +91 98765 43210</p>
+    <p><strong>Email:</strong><br>✉️ jane.doe@company.com</p>
+    
+</aside>
+
