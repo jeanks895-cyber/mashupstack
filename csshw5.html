@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simple Blog Post</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 20px;
+    }
+
+    .post-container {
+        background: #fff;
+        padding: 20px;
+        width: 650px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .post-container h1 {
+        margin-bottom: 5px;
+    }
+
+    .author {
+        color: #777;
+        margin-bottom: 15px;
+    }
+
+    .content p::first-line {
+        font-weight: bold;
+    }
+
+    .content p::first-letter {
+        font-size: 2.5rem;
+        color: darkred;
+        font-weight: bold;
+        margin-right: 6px;
+    }
+
+    blockquote {
+        margin: 20px 0;
+        padding: 10px 15px;
+        background: #f0f0f0;
+        border-left: 4px solid #888;
+        font-style: italic;
+        position: relative;
+    }
+
+    blockquote::before {
+        content: "“";
+        font-size: 2rem;
+        color: #555;
+        position: absolute;
+        left: -10px;
+        top: -10px;
+    }
+
+    a:link {
+        color: blue;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .section-titles {
+        display: flex;
+        gap: 20px;
+    }
+
+    .section-titles h4 + h4 {
+        color: darkgreen;
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="post-container">
+    <h1>My First Blog Post</h1>
+    <p class="author">By Jean</p>
+
+    <div class="content">
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet 
+            ligula non sem ultricies, sit amet convallis massa vulputate. 
+            <a href="https://www.mashupstack.com/">Click here</a> to read more about this topic.
+        </p>
+
+        <blockquote>
+            This is an important quote related to the topic discussed above.
+        </blockquote>
+
+    </div>
+
+    <div class="section-titles">
+        <h4>Section One</h4>
+        <h4>Section Two</h4>
+    </div>
+
+</div>
+
+</body>
+</html>
