@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Web Page</title>
+
+<style>
+    section p::first-line {
+        font-weight: bold;
+    }
+
+    section p::first-letter {
+        color: red;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .heading-box h3 + h3 {
+        color: green;
+    }
+
+
+    a:link {
+        color: blue;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    a:hover {
+        color: orange   ;
+        text-decoration: underline;
+    }
+
+    ul li:first-child a {
+        color: red;
+    }
+
+</style>
+</head>
+<body>
+
+<section>
+    <h2>Main Section</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at dui ac 
+        nulla cursus porttitor vitae sit amet erat.
+    </p>
+
+    <p>
+        Integer dignissim magna id augue laoreet, vitae commodo nisl interdum. 
+        Vivamus nec urna at nibh sagittis sollicitudin.
+    </p>
+</section>
+
+<div class="heading-box">
+    <h3>1st Heading</h3>
+    <h3>2nd Heading</h3>
+</div>
+
+<div class="link-list">
+    <ul>
+        <li><a href="#">First link</a></li>
+        <li><a href="#">Second link</a></li>
+        <li><a href="#">Third link</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
