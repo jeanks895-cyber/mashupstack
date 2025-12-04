@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog Section</title>
+
+<style>
+    .blog-section {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+
+    .blog-post {
+        width: 30%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .blog-post img[src$=".jpg"] {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    a[href^="https"] {
+        color: red;
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+        .blog-section {
+            flex-direction: column;
+        }
+        .blog-post {
+            width: 100%;
+        }
+        .blog-post h3,
+        .blog-post p,
+        .blog-post a {
+            font-size: 14px;
+        }
+    }
+
+    @media (orientation: portrait) {
+        .blog-section {
+            background-color: lightyellow;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<section class="blog-section">
+    
+    <div class="blog-post">
+        <h3>Exploring Nature Trails</h3>
+        <img src="nature.jpg" alt="Nature Image">
+        <p>A short guide to discovering scenic outdoor spots.</p>
+        <a href="https://example.com/nature">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>Healthy Food Habits</h3>
+        <img src="food.jpg" alt="Food Image">
+        <p>Learn how to maintain a balanced and healthy diet.</p>
+        <a href="http://example.com/food">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>Smartphone Photography Tips</h3>
+        <img src="camera.jpg" alt="Camera Image">
+        <p>Improve your phone photography with simple tricks.</p>
+        <a href="https://example.com/photography">Read More</a>
+    </div>
+
+</section>
+
+</body>
+</html>
