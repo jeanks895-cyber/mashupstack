@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        .product-card {
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+            margin: 20px auto;
+            background: #f9f9f9;
+            transition: 0.3s;
+        }
+
+        .product-img {
+            width: 100%;
+            border: 2px solid black;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .product-name {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .buy-btn {
+            display: block;
+            background: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .product-card {
+                margin: auto;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .product-name {
+                font-size: 16px;
+            }
+        }
+
+        @media (orientation: landscape) {
+            .product-card {
+                background: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        <img src="https://thumbs.dreamstime.com/b/men-shirt-display-mannequin-clothes-shop-trendy-cotton-summer-collection-fashion-product-samples-clothing-store-selling-177634234.jpg" class="product-img" alt="Product">
+        <h2 class="product-name">Sample Product</h2>
+
+        <a href="https://www.flipkart.com/" class="buy-btn">Buy Now</a>
+    </div>
+
+</body>
+</html>
