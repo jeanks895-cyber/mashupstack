@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkyWay Travels</title>
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     <style>
@@ -14,10 +13,10 @@
             min-height: 100vh;
         }
     </style>
+
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg" style="background-color: #0d6efd;">
         <div class="container justify-content-center">
             <ul class="navbar-nav">
@@ -37,52 +36,26 @@
         </div>
     </nav>
 
-    <!-- NAV PILLS WITH TAB FUNCTIONALITY -->
     <div class="container text-center my-4">
-        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="pill" data-bs-target="#beach">Beach</a>
+                <a class="nav-link active" href="#">Beach</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" data-bs-target="#mountain">Mountain</a>
+                <a class="nav-link" href="#">Mountain</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" data-bs-target="#city">City</a>
+                <a class="nav-link" href="#">City</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" data-bs-target="#adventure">Adventure</a>
+                <a class="nav-link" href="#">Adventure</a>
             </li>
         </ul>
-
-        <!-- TAB CONTENT -->
-        <div class="tab-content mt-4">
-            <div class="tab-pane fade show active" id="beach">
-                <h4>Beach Destinations</h4>
-                <p>Relax on sandy beaches with crystal-clear blue water. Maldives, Goa, Bali and more!</p>
-            </div>
-
-            <div class="tab-pane fade" id="mountain">
-                <h4>Mountain Destinations</h4>
-                <p>Explore scenic mountains, trekking routes, and chilly escapes like Manali and Switzerland.</p>
-            </div>
-
-            <div class="tab-pane fade" id="city">
-                <h4>City Destinations</h4>
-                <p>Experience modern city life in Dubai, New York, Singapore, and Tokyo.</p>
-            </div>
-
-            <div class="tab-pane fade" id="adventure">
-                <h4>Adventure Destinations</h4>
-                <p>Skydiving, rafting, hiking, bungee jumping — for the thrill seekers!</p>
-            </div>
-        </div>
     </div>
 
-    <!-- MAIN LAYOUT WITH SIDEBAR -->
     <div class="container-fluid">
         <div class="row">
-
-            <!-- LEFT SIDEBAR -->
+            
             <div class="col-md-2 sidebar bg-light p-3">
                 <h5 class="mb-3">Menu</h5>
                 <ul class="nav flex-column">
@@ -93,16 +66,14 @@
                 </ul>
             </div>
 
-            <!-- MAIN CONTENT -->
             <div class="col-md-10 p-4">
                 <h2>Welcome to SkyWay Travels</h2>
-                <p>Choose a destination type from the pill menu above or explore more from the sidebar.</p>
+                <p>Select a destination type from above or explore options from the sidebar.</p>
             </div>
 
         </div>
     </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap JS (Required for tabs/pills to work) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
