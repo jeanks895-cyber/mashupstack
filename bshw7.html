@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <style>
+  body {
+    background-image: url('https://images.pexels.com/photos/12795418/pexels-photo-12795418.jpeg?cs=srgb&dl=pexels-estudiodelarts-12795418.jpg&fm=jpg');
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+  }
+</style>
+
+
+<div class="container mt-5">
+
+  <div id="travelCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="4000">
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="3"></button>
+</div>
+
+    <div class="carousel-inner">
+
+<button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+
+
+        <div class="carousel-item active">
+  <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww"
+       class="d-block w-100"
+       style="height:400px; object-fit:cover;"
+       alt="Welcome to Kerala">
+         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+
+  <div class="carousel-caption top-50 start-50 translate-middle text-center rounded">
+    <h1 class="display-4 fw-bold">Global Horizons</h1>
+    <p class="lead">Travel beyond borders.</p>
+  </div>
+</div>
+
+
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?cs=srgb&dl=pexels-fabianwiktor-994605.jpg&fm=jpg"
+             class="d-block w-100"
+             style="height:400px; object-fit:cover;">
+        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+          <h3>Beach Paradise</h3>
+          <p>Relax by the sunny shores</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://4kwallpapers.com/images/wallpapers/alps-mountains-mountain-range-summer-sunny-day-forest-clear-3840x2160-5384.jpg"
+             class="d-block w-100"
+             style="height:400px; object-fit:cover;">
+        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+          <h3>Mountain Escape</h3>
+          <p>Explore breathtaking landscapes</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg?cs=srgb&dl=pexels-pixabay-210182.jpg&fm=jpg"
+             class="d-block w-100"
+             style="height:400px; object-fit:cover;">
+        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+          <h3>City Adventures</h3>
+          <p>Discover vibrant city life</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center mb-4">
+    <button class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#bookingModal">
+      Book Now
+    </button>
+  </div>
+
+  <div class="container text-center my-4">
+  <i class="bi bi-info-circle fs-4 text-white"
+     data-bs-toggle="tooltip"
+     title="Click 'Book Now' to view booking details and offers."
+     style="cursor: pointer;"></i>
+</div>
+
+
+</div>
+
+<div class="modal fade" id="bookingModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Booking Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Enjoy exclusive travel packages with comfortable stays,
+          guided tours, and affordable prices.
+        </p>
+        <p>
+          Contact our travel experts for customized plans and special discounts.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+</script>
+
+</body>
+</html>
