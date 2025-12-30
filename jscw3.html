@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Cleaner</title>
+</head>
+<body>
+
+    <h2>Feedback Processing</h2>
+
+    <script>
+        var feedback = "   I loved the FOOD and the service!   ";
+
+        var cleanFeedback = feedback.trim();
+
+        cleanFeedback = cleanFeedback.toLowerCase();
+
+        cleanFeedback = cleanFeedback.replace("food", "ambience");
+
+        var position = cleanFeedback.indexOf("service");
+
+        var wordsArray = cleanFeedback.split(" ");
+
+        console.log("Cleaned Feedback:", cleanFeedback);
+        console.log("Position of 'service':", position);
+        console.log("Words Array:", wordsArray);
+    </script>
+
+</body>
+</html>
