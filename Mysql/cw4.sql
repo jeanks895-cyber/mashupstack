@@ -4,7 +4,7 @@ VALUES (1, 'Learn SQL', 'John Smith', 400, 10),
 (3, 'HTML & CSS Basics', 'Alan Webb', 300, 8);
 
 UPDATE books
-SET price = price + 50, stock = 12
+SET price = price + 150, stock = 12
 WHERE title = 'Learn SQL';
 
 UPDATE books
